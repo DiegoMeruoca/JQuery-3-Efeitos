@@ -1,0 +1,77 @@
+nav { 
+	display:block; 
+	border:1px solid #222; 
+	position:relative;background:#6a6a6a;
+	z-index:10; 
+	font:20px Tahoma, Sans-serif;
+}/*NAV-Navegação - Display em bloco, borda de 1px cinza escuro, posição
+relativa e fundo na cor cinza */
+nav ul { 
+	padding:0; 
+	margin:0;
+}/*UL - Corpo da lista - Define o espaçamento interno e externo em 0*/
+nav li { 
+	position:relative; 
+	float:left; 
+	list-style-type:none; 
+	text-align:center;
+}/*Itens da lista -  posição relativa flutuando a esquerda, remove o 
+estilo de lista, centraliza os textos*/
+nav ul:after { 
+	content:""; 
+	display:block; 
+	clear:both;
+}/*Após a lista insere um conteudo "vazio" em display de bloco, clear 
+para limpar a marcação de float para que osproximos itens do site não 
+grudem a esquerda do menu, sejam inseridos em um novo contexto*/
+nav li a { 
+	display:block; 
+	padding:10px 30px;
+	border-left:1px solid #999; 
+	border-right:1px solid #222;
+	color:#eee; 
+	text-decoration:none; 
+}/*Links na lista - display em bloco com espaçamento interno horizontal 30
+vertical 10, borda esquerda solida cinza claro,  borda direita solida cinza
+escuro, texto sem decorações*/
+nav li:first-child a { 
+	border-left:none; 
+}/*Deixa sem borda esquerda apena o primeiro a*/
+nav ul ul { 
+	display:none; 
+	width:100%; 
+	position:absolute; 
+	left:0;
+}/*Corpo da sublista - Deixa els sem dysplay, com largura 100% seguindo o 
+tamanho do li da lista principal*/
+nav ul ul li { 
+	float:none;
+	background:#000; 
+	opacity:0.8;
+}/*Deixa o elemeto da sub lista sem fuluação,para funcionar o 100% do anterior, 
+fundo preto com 80% de opacidade*/
+nav ul ul a { 
+	padding:7px; 
+	border:none; 
+	font-size:16px; 
+}/*Define o link da sublista com espaçamento interno vertical 7px, sem bordas e font 16px*/
+nav ul ul li:hover { 
+	background-color:#555; 
+	opacity:1;
+}/*Fundo qnd o mouse estiver sobre o link na sublista
+cinza escuro e com a opacidade 100%*/
+nav ul li ul.sublista {
+	display:none;
+}/*Deixa como sem display os elementos na classe sublista, isso faz
+ com que ela fique não visivel*/
+nav ul li:hover ul.sublista {
+	display:block;
+}/*Deixa como display bloco os elementos na classe 
+sublista enquanto o mouse estiver sobre o li, isso faz a sublista aparecer */	
+#conteudo {
+	padding: 10px; 
+	position: relative;
+	float:left; 
+	font-family:Arial Black;
+}/*Define a estilização da div que terá o conteúdo com espaçamento interno de 10px,
+ posição relativa, flutuando a esquerda e-resize fonte Arial Black */

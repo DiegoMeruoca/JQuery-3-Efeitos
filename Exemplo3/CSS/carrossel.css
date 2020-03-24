@@ -1,0 +1,35 @@
+body{ 
+	margin:0;
+}/*Remove as margens para o conteudo encostar na borda*/
+img{
+	border:0; 
+	width:800px; 
+	height:250px; 
+	border-radius:15px;
+}/*Remove as bordas, seta o tamanho da img e arredonda os cantos*/
+#slider{
+	list-style:none; 
+	width:800px; 
+	height:250px; 
+	margin: 0 auto;
+	padding:0; 
+	overflow: hidden; 
+	position: relative;
+}/*Removs estilos de lista, define tamanho, margen, espaçamento interno
+caso um pedaço da imagem ultrpasse sera escondiso e seta posição relaiva*/
+#slider li{
+	position: absolute; 
+	display:none;
+}/*Deixa os itens da lista com posição absoluta sem display, para ocultar */
+#divcarrossel{
+	background:#222; 
+	position:relative;
+}/*Adiciona fundo cinza escuro e posição relativa */
+#conteudo {
+	margin-left:50px; 
+	padding: 10px; 
+	position: relative;
+	float:left; 
+	font-family:Arial Black;
+}/*Define a estilização da div que terá o conteúdo com espaçamento interno de 
+10px, posição relativa, flutuando a esquerda, fonte Arial Black */
